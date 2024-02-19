@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+  height: 90vh;
+  width: auto;
+}
+
+.middle-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bottom-right-button {
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+  font-size: 18px;
+  color: black;
+  opacity: 10%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
