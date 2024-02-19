@@ -17,14 +17,15 @@ h1 {
   text-align: center;
 }
 
-.bottom-right-button {
+.bellow-middle-text-button {
   position: absolute;
-  bottom: 0px;
-  right: 16px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 18px;
   color: black;
-  opacity: 10%;
-  background-color: white;
+  opacity: 100%;
+
   border: none;
   cursor: pointer;
   border-radius: 5px;
