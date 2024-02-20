@@ -1,5 +1,8 @@
+:root {
+  --bodycolor: rgb(26, 26, 26);
+}
 body {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--bodycolor);
   height: 90vh;
   width: auto;
   font-family: kode-mono, monospace;
@@ -8,6 +11,8 @@ body {
 .material-icons {
   vertical-align: middle;
 }
+
+/* Navbar CSS */
 
 .navbar {
   background-color: rgb(20, 20, 20);
@@ -66,36 +71,223 @@ body {
   height: 100%;
   width: 40%;
 }
-
-.middle-text {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* End Navbar CSS */
+/* Index CSS */
+.index-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  background-color: var(--bodycolor);
 }
 
-h1 {
-  color: white;
-  font-size: 50px;
-  text-align: center;
+.index-main {
+  background-color: var(--bodycolor);
+  border-radius: 10px;
+  margin-top: 14vh;
+  width: 50%;
+  max-width: 800px;
+  height: 80vh;
+  /* background-color: aqua; */
 }
 
-.bellow-middle-text-button {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
+.index-main .middle-text {
   color: white;
-  opacity: 100%;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
+  padding: 50px;
+}
+
+.index-main .middle-text h1 {
+  font-size: 25px;
+  text-align: left;
+}
+.index-main .middle-text p {
+  color: rgb(170, 170, 170);
+  text-align: left;
+}
+.index-main .whiteline {
+  margin-top: 50px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.index-main .middle-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.index-main .index-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+.index-main .index-button a {
+  margin-top: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-decoration: none;
-  display: inline-block;
-  transition-duration: 0.4s;
+}
+.index-main .index-button a:hover {
+  color: orangered;
+}
+/* End Index CSS */
+/* Projects CSS */
+
+.projects-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 5vh;
+  padding: 0;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--bodycolor);
+}
+.projects-main {
+  background-color: var(--bodycolor);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+}
+.projects-main h1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+
+.project-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  height: 100px;
+}
+
+.project-1 img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+.content-1 {
+  color: white;
+}
+.content-1 h2 {
+  font-size: 20px;
+}
+.content-1 p {
+  font-size: 15px;
+}
+
+.content-1 .button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+.content-1 .button-container a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.content-1 .button-container a:hover {
+  color: orangered;
+}
+
+/* End Projects CSS */
+
+/* Contact CSS */
+.contact-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  background-color: var(--bodycolor);
+}
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bodycolor);
+  border-radius: 10px;
+  margin-top: 14vh;
+  width: 50%;
+  max-width: 800px;
+  height: 80vh;
+  /* background-color: aqua; */
+}
+
+.contact-main .middle-text {
+  color: white;
+  padding: 150px;
+}
+
+.contact-main .middle-text h1 {
+  font-size: 25px;
+  text-align: left;
+}
+.contact-main .middle-text p {
+  color: rgb(170, 170, 170);
+  text-align: left;
+}
+.contact-main .whiteline {
+  margin-top: 30px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.contact-main .middle-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.contact-main .contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+.contact-main .contact-button a {
+  margin-top: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.contact-main .contact-button a:hover {
+  color: orangered;
 }
 
 footer {
@@ -107,5 +299,5 @@ footer {
   color: rgb(205, 205, 205);
   padding: 10px;
   text-align: center;
-  font-size: small;
+  font-size: 10px;
 }
