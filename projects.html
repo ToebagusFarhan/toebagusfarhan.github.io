@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$helloworld</title>
+    <title>$helloworld • Projects</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,77 +16,75 @@
       rel="stylesheet"
     />
     <script
+      defer
       src="https://kit.fontawesome.com/914e3a545f.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="includes.js"></script>
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbutton-container">
-        <a href="/"><span class="material-icons">face</span> About</a>
-        <a href="/projects.html" class="active">
-          <span class="material-icons"> inventory_2 </span> Projects</a
-        >
-        <a href="/contact.html"
-          ><span class="material-icons"> contacts </span> Contact</a
-        >
-      </div>
-    </div>
+    <header class="header-placeholder"></header>
 
-    <div class="projects-main-container">
-      <div class="projects-main">
-        <h1><span class="material-icons md-24">dns</span> Projects</h1>
-        <div class="project-container">
-          <div class="project-1">
-            <img src="assets\yasiicon.png" alt="icon_yasi" class="icon-pj1" />
-            <div class="content-1">
-              <h2 class="judul-1">YASI (Yet Another Signal Info)</h2>
-              <p>
-                YASI or Yet Another Signal Info is an application that we
-                developed as an information provider about GSM signals in an
-                area. The data obtained is data provided by USER, so it can be
-                said that this application is made by USER for USER.
-              </p>
-              <div class="button-container">
-                <a
-                  href="https://drive.google.com/drive/folders/1gphdQOv2hefheu-KivIopV5rZ88OJIq5?usp=sharing"
-                  target="_blank"
-                  class="button-1"
-                  ><i class="fa-solid fa-download"></i> Download</a
-                >
-                <a
-                  href="https://github.com/ToebagusFarhan/YASI-APP"
-                  target="_blank"
-                  class="button-2"
-                  ><i class="fa-brands fa-github"></i> Source</a
-                >
-              </div>
-            </div>
-          </div>
+    <main class="container">
+      <h1>My Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h2>Multi-Cipher Tool</h2>
+          <p>
+            A web app for encrypting/decrypting text and files using classical
+            ciphers like Hill, Vigenère, and Playfair.
+          </p>
+          <a href="https://github.com/ToebagusFarhan/webcrypto" target="_blank"
+            >View on GitHub</a
+          >
         </div>
+
+        <div class="project-card">
+          <h2>Plate Detection with YoloV8</h2>
+          <p>
+            A Badly written python code to detect license plates using YoloV8.
+          </p>
+          <a
+            href="https://github.com/ToebagusFarhan/plate-detection-yolov8"
+            target="_blank"
+            >View On Github</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h2>Python Network Pinger</h2>
+          <p>
+            A simple python script to ping IP addresses and check their status.
+            It uses the ping command to send ICMP echo requests and notifies
+            when internet is down.
+          </p>
+          <a
+            href="https://github.com/ToebagusFarhan/networkpinger"
+            target="_blank"
+            >View On Github</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h2>ScanVision</h2>
+          <p>
+            ScanVision is an innovative application that leverages machine
+            learning to assess and classify eye health conditions quickly and
+            accurately. It caters to both medical professionals and the general
+            public by offering a user-friendly platform for detecting common eye
+            health issues such as Diabetic Retinopathy, Cataract, Myopia, and
+            Dry Eye Irritation
+          </p>
+          <a href="https://github.com/ScanVison/ScanVision" target="_blank"
+            >View On Github</a
+          >
+        </div>
+
+        <!-- Add more cards as needed -->
       </div>
-    </div>
+    </main>
+
+    <footer class="footer-placeholder"></footer>
   </body>
-  <footer>
-    <p>
-      Copyright Ⓒ 2024
-      <a
-        href="https://toebagusfarhan.github.io"
-        target="_blank"
-        style="text-decoration: none; color: rgb(205, 205, 205)"
-        >toebagusfarhan.</a
-      >
-      All rights reserved.
-    </p>
-    <p>
-      web design is heavily inspired from
-      <a
-        href="https://jellysquid.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="text-decoration: none; color: rgb(205, 205, 205)"
-        >jellysquid.</a
-      >
-    </p>
-  </footer>
 </html>
