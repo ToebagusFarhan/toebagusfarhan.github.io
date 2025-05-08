@@ -17,7 +17,7 @@ body {
 }
 body {
   background-color: var(--bodycolor);
-  height: 90vh;
+  height: auto;
   width: auto;
   font-family: kode-mono, monospace;
 }
@@ -61,12 +61,12 @@ body {
   transition: width 0.4s;
 }
 .navbar a:hover::after {
-  background: white;
+  background: orangered;
   width: 100%;
   bottom: -2px;
 }
 .navbar a:hover {
-  color: white;
+  color: orangered;
 }
 
 .navbar a.active {
@@ -150,7 +150,7 @@ body {
   gap: 10px;
   text-decoration: none;
 }
-.index-main .index-button a:hover {
+.index-main .index-button:hover {
   color: orangered;
 }
 /* End Index CSS */
@@ -162,7 +162,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 12vh; /* Match or exceed navbar height */
   padding: 0;
   flex-direction: column;
   position: relative;
@@ -302,6 +302,23 @@ body {
 }
 .contact-main .contact-button a:hover {
   color: orangered;
+}
+
+.button-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232323;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-1:hover {
+  background-color: #ff5722;
 }
 
 footer {
